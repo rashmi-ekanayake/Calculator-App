@@ -54,3 +54,18 @@ num_button = partial(Button, root, fg=text_fg, bg=num_button_bg,
 
 cal_button = partial(Button, root, fg=text_fg, bg=cal_button_bg,
                      padx=10, pady=3, activebackground=button_active_bg)
+
+    button7 = num_button(text='7', command=lambda: get_input(entry, '7'))
+    button7.grid(row=2, column=0, pady=5)
+
+    button8 = num_button(text='8', command=lambda: get_input(entry, '8'))
+    button8.grid(row=2, column=1, pady=5)
+
+    button9 = num_button(text='9', command=lambda: get_input(entry, '9'))
+    button9.grid(row=2, column=2, pady=5)
+
+    button10 = cal_button(text='+', command=lambda: get_input(entry, '+'))
+    button10.grid(row=4, column=3, pady=5)
+
+    # and so on for the rest (4,5,6,-), (1,2,3,*), (0,.,/, etc.)
+
