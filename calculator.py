@@ -94,4 +94,7 @@ cal_button = partial(Button, root, fg=text_fg, bg=cal_button_bg,
 
     root.mainloop()
 
+if __name__ == '__main__':
+    cal()
+
 
