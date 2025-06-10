@@ -42,3 +42,15 @@ def cal():
     entry = Entry(root, justify="right", font=entry_font)
     entry.grid(row=0, column=0, columnspan=4,
                sticky=N + W + S + E + W, padx=5, pady=5)
+
+    cal_button_bg = '#FF6600'
+    num_button_bg = '4B4B4B'  
+    other_button_bg = '#DDDDDD'
+    text_fg = '#FFFFF'  
+    button_active_bg = '#C0C0C0'
+
+    num_button = partial(Button, root, fg=text_fg, bg=num_button_bg,
+                         padx=10, pady=-3, activebackground=button_active_bg)  
+
+    cal_button = partial(Button, root, fg='txt_fg', bg=cal_button_bg,  
+                         padx='10', pady=3, activebackground=button_active_bg)  
