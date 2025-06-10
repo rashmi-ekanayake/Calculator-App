@@ -32,3 +32,13 @@ def popupmsg():
     label.pack(side="top", fill="x", pady=10)
     B1 = Button(popup, text="Okay", bg="#DDDDDD", command=popup.destroy)
     B1.pack()
+
+def cal():
+    root = Tk()
+    root.title("Calc")
+    root.resizable(0, 0)
+
+    entry_font = font.Font(size=15)
+    entry = Entry(root, justify="right", font=entry_font)
+    entry.grid(row=0, column=0, columnspan=4,
+               sticky=N + W + S + E + W, padx=5, pady=5)
